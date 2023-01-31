@@ -15,7 +15,7 @@ $(document).ready(function() {
 		const message = $('#chatbot-input').val();
 		$.ajax({
 			type: 'POST',
-			url: 'https://isa-lab2.onrender.com/chatbot',
+			url: '/chatbot',
 			data: {
 				message: message
 			},
