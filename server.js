@@ -2,6 +2,8 @@ const express = require('express');
 const axios = require('axios');
 const app = express()
 app.use(express.json()); // read JSON BODY
+const cors = require('cors');
+app.use(cors());
 app.use(express.urlencoded({ extended: true })); // read URL encoded body
 // app.use(express.static(__dirname + '/public'));
 
